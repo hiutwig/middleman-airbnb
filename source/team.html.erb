@@ -1,0 +1,13 @@
+<div id="about">
+  <div class="about-content">
+    <h1>Meet our team of awesome developers <i class="fa fa-rocket"></i></h1>
+    <ul class="list-inline text-center">
+    <% ["AlesSinkovec", "hiutwig", "tpdoyle87", "fassousa"].each do |gh_username| %>
+      <li>
+      <%= image_tag "https://kitt.lewagon.com/placeholder/users/#{gh_username}", class: "img-circle img-size" %>
+      <h3><%= gh_username.capitalize %></h3>
+      </li>
+    <% end %>
+    </ul>
+  </div>
+</div>
